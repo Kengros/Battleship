@@ -1,0 +1,566 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+    background-image: url(img/attack2.gif);  
+    background-color: black;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.Battleship-App {
+  background-size: 100%;
+}
+
+#main {
+	width: 700px;
+	height: 800px;
+    margin: auto;
+
+}
+
+#banner{
+    width: 100%;
+}
+
+.banner {
+    width: 100%;
+    margin-bottom: -4%;
+}
+
+#sidebar {
+
+}
+
+#multiplay {
+
+}
+ .random {
+  display: block !important;  
+ }
+
+ .vert {
+  display: block !important;  
+ }
+
+.sidebar {
+
+}
+
+.board {
+	position: absolute;
+	width: 380px; 
+	height: 740px;
+	margin: 25px auto;
+}
+
+.displays {
+	position: relative;
+	margin: 25px;
+}
+
+.top {
+	width: 330px;
+	height: 330px;
+	background: #1a75b5;
+	border-left: 1px solid #3ac6c6;
+	border-bottom: 1px solid #3ac6c6;
+
+}
+
+.bottom {
+	width: 330px;
+	height: 330px;
+	margin-top: 25px;
+	background: #1a75b5;
+	border-left: 1px solid #3ac6c6;
+	border-bottom: 1px solid #3ac6c6;
+}
+
+.grid {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	background: rgba(0,0,0,0);
+	margin-left: 30px;
+	font-size: 0;
+}
+
+.hide {
+	display: none !important;
+}
+
+#rbp2 {
+	margin-top: 50%;
+    margin-left: 20%;
+}
+
+#rbp1 {
+	margin-top: 50%;
+    margin-left: 20%;
+}
+
+.board2 {
+	position: absolute;
+	width: 380px; 
+	height: 740px;
+	margin: 25px auto;
+}
+
+.displays2 {
+	position: relative;
+	margin: 25px;
+}
+
+.top2 {
+	width: 330px;
+	height: 330px;
+	background: #1a75b5;
+	border-left: 1px solid #3ac6c6;
+	border-bottom: 1px solid #3ac6c6;
+
+}
+
+.bottom2 {
+	width: 330px;
+	height: 330px;
+	margin-top: 25px;
+	background: #1a75b5;
+	border-left: 1px solid #3ac6c6;
+	border-bottom: 1px solid #3ac6c6;
+}
+
+.grid2 {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	background: rgba(0,0,0,0);
+	margin-left: 30px;
+	font-size: 0;
+}
+
+.board3 {
+	position: absolute;
+	width: 380px; 
+	height: 740px;
+	margin: 25px auto;
+}
+
+.displays3 {
+	position: relative;
+	margin: 25px;
+}
+
+.top3 {
+	width: 330px;
+	height: 330px;
+	background: #1a75b5;
+	border-left: 1px solid #3ac6c6;
+	border-bottom: 1px solid #3ac6c6;
+
+}
+
+.bottom3 {
+	width: 330px;
+	height: 330px;
+	margin-top: 25px;
+	background: #1a75b5;
+	border-left: 1px solid #3ac6c6;
+	border-bottom: 1px solid #3ac6c6;
+}
+
+.grid3 {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	background: rgba(0,0,0,0);
+	margin-left: 30px;
+	font-size: 0;
+}
+
+.aTops {
+	width: 29px;
+	height: 29px;
+	border-top: 1px solid #3ac6c6;
+	border-right: 1px solid #3ac6c6;
+	display: table-cell;
+	vertical-align: middle;
+
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+
+.aLeft {
+	position: relative;
+	width: 29px;
+	height: 29px;
+	border-top: 1px solid #3ac6c6;
+	border-right: 1px solid #3ac6c6;
+	display: block;
+	line-height: 29px;
+
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+
+.points {
+	position: relative;
+	width: 29px;
+	height: 29px;
+	border-top: 1px solid #3ac6c6;
+	border-right: 1px solid #3ac6c6;
+	display: inline-block;
+
+
+}
+
+.highlight {
+	background: rgba(144,144,144,0.9);
+}
+
+.hidezero {
+    color: #1a75b5;
+}
+
+.hole {
+	position: relative;
+	width: 10px;
+	height: 10px;
+	margin: 9px;
+	border: 1px solid #3ac6c6;
+	border-radius: 50%;
+	display: table;
+}
+
+.shipPanel {
+    display: none;
+    position: relative;
+    width: 275px;
+    margin-top: 8%;
+    background-color: rgba(0,0,0,0.75);
+    border: 2px solid #73B1B7;
+}
+
+.carrierIcon {
+    width: 90%;
+}
+
+.battleshipIcon {
+    width: 80%;
+}
+
+.cruiserIcon {
+    width: 70%;
+}
+
+.destroyerIcon {
+    width: 60%;
+}
+
+.frigateIcon {
+    width: 50%;
+}
+
+.panel {
+	float: right;
+	width: 275px;
+	height: 740px;
+	margin-top: 25px;
+}
+
+.topPanel {
+    width: 275px;
+    height: 327px;
+    border: 2px solid #73B1B7;
+    display: inline-block;
+    margin-top: 9%;
+    background-color: rgba(0,0,0,0.75);
+}
+
+.bottomPanel {
+	
+}
+
+.console {
+    position: relative;
+    width: 275px;
+    height: 14%;
+    margin-top: 9%;
+    display: block;
+    color: #00f72c;
+    background-color: rgba(0,0,0,0.75);
+    border: 2px solid #73B1B7;
+
+}
+
+.text {
+    font-family: roboto;
+	position: relative;
+	width: 250px;
+	height: 375px;
+	margin: 12px;
+	display: inline-block;
+}
+
+.menuTitle {
+    text-align: center;
+    font-size: 60px;
+    font-family: roboto;
+    font-weight: bolder;
+    color: #ffffff;
+    text-shadow: 2px 2px rgba(255,255,255,0.35);;
+}
+
+.menutext {
+  text-align: center;
+  font-size: 30px;
+  font-family: roboto;
+  font-weight: bolder;
+  color: #ffffff;
+  text-shadow: 2px 2px rgba(255,255,255,0.35);;
+}
+.shipTitleTop {
+    text-align: center;
+    font-size: 22px;
+    font-family: roboto;
+    font-weight: bolder;
+    color: #ffffff;
+    text-shadow: 2px 2px rgba(255,255,255,0.35);
+    margin-top: 8.5%;
+}
+
+.shipTitleBottom {
+    text-align: center;
+    font-size: 22px;
+    font-family: roboto;
+    font-weight: bolder;
+    color: #ffffff;
+    text-shadow: 2px 2px rgba(255,255,255,0.35);
+    margin-top: 15%;
+    margin-bottom: 8.5%;
+}
+
+.shipTitle {
+    text-align: center;
+    font-size: 22px;
+    font-family: roboto;
+    font-weight: bolder;
+    color: #ffffff;
+    text-shadow: 2px 2px rgba(255,255,255,0.35);
+    margin-top: 15%;
+}
+
+.buttons {
+	position: relative;
+	display: block;
+	width: 150px;
+	height: 40px;
+	margin: 50px auto;
+	border: 2px solid #cccccc;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+    font-family: roboto;
+    text-align: center;
+	line-height: 40px;
+    cursor: pointer;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.buttons:hover {
+	background: rgba(169,169,169,0.3);
+}
+
+.target {
+	background: rgba(250, 10, 10, 0.7);
+}
+
+.carrier {
+	background: rgba(36,36,36,1);
+}
+
+.battleship {
+	background: rgba(49,49,49,0.9);
+}
+
+.cruiser {
+	background: rgba(64,64,64,0.9);
+}
+
+.destroyer {
+	background: rgba(81,81,81,0.7);
+}
+
+.frigate {
+	background: rgba(100,100,100,0.7);
+}
+
+.hit {
+	position: relative;
+	margin: 1.5px;
+	width: 15px;
+	height: 15px;
+	top: 5px;
+	left: 5px;
+
+	
+	background: rgb(220,10,10);
+	border: 1px solid red;
+	border-radius: 100%;
+	overflow: hidden;
+
+	display: table;
+
+	animation-name: expand;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+ 	animation-timing-function: linear;
+ 	animation-fill-mode: none;
+
+	-webkit-animation-name: expand;
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-iteration-count: 1;
+ 	-webkit-animation-timing-function: linear;
+ 	-webkit-animation-fill-mode: none;
+
+ 	-moz-animation-name: expand;
+	-moz-animation-duration: 0.5s;
+	-moz-animation-iteration-count: 1;
+ 	-moz-animation-timing-function: linear;
+ 	-moz-animation-fill-mode: none;
+}
+
+.miss {
+	position: relative;
+	margin: 1.5px;
+	width: 15px;
+	height: 15px;
+	top: 5px;
+	left: 5px;
+
+	background: rgb(250,250,250);
+	border: 1px solid white;
+	border-radius: 100%;
+	overflow: hidden;
+
+	display: table;
+
+	animation: expand;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+ 	animation-timing-function: linear;
+ 	animation-fill-mode: none;
+
+	-webkit-animation: expand;
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-iteration-count: 1;
+ 	-webkit-animation-timing-function: linear;
+ 	-webkit-animation-fill-mode: none;
+
+ 	-moz-animation: expand;
+	-moz-animation-duration: 0.5s;
+	-moz-animation-iteration-count: 1;
+ 	-moz-animation-timing-function: linear;
+ 	-moz-animation-fill-mode: none;
+
+}
+
+@keyframes expand {
+	0% {
+		width: 0px;
+		height: 0px;
+		top: 12.5px;
+		left: 12.5px;
+	}
+	50% {
+		width: 25px;
+		height: 25px;
+		top: 0px;
+		left: 0px;
+	}
+	100% {
+		width: 15px;
+		height: 15px;
+		top: 5px;
+		left: 5px;
+	}
+}
+
+@-webkit-keyframes expand {
+	0% {
+		width: 0px;
+		height: 0px;
+		top: 12.5px;
+		left: 12.5px;
+	}
+	50% {
+		width: 25px;
+		height: 25px;
+		top: 0px;
+		left: 0px;
+	}
+	100% {
+		width: 15px;
+		height: 15px;
+		top: 5px;
+		left: 5px;
+	}
+}
+
+@-moz-keyframes expand {
+	0% {
+		width: 0px;
+		height: 0px;
+		top: 12.5px;
+		left: 12.5px;
+	}
+	50% {
+		width: 25px;
+		height: 25px;
+		top: 0px;
+		left: 0px;
+	}
+	100% {
+		width: 15px;
+		height: 15px;
+		top: 5px;
+		left: 5px;
+	}
+}

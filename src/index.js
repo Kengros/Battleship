@@ -504,7 +504,6 @@ function selfSetupP1() {
 	player1Fleet = new Fleet("Player 1");
 	player1Fleet.initShips();
 	placeShipP1(player1Fleet.ships[player1Fleet.currentShip], player1Fleet);
-	
 }
 
 // Player 2 Self Place Ship Function //
@@ -779,8 +778,10 @@ function setShipMulti(location, ship, orientation, genericFleet, type) {
 				$(".text").text(coms.placed1("ships have"));
 				// & Mouse Tracking Turns Off //
 				$(".bottom2").find(".points").off("mouseenter");
+				$(".horz").addClass("player").addClass("hide").removeClass("horz").text("Place My Own");	
+				$(".vert").addClass("five").removeClass("vert").text("Player 2 Place Ships");
 				// Delay For Smoother User Experience //
-				setTimeout(gameSetupMultiP2, 100);
+				setTimeout(gameSetupMultiP2, 500);
 			} else {
 				// Player 1 Random Ship Placement //
 				if (type == "random") randomSetupMulti(genericFleet);
@@ -842,6 +843,9 @@ function setShip(location, ship, orientation, genericFleet, type) {
 				$(".text").text(coms.placed("ships have"));
 				// & Mouse Tracking Turns Off //
 				$(".bottom3").find(".points").off("mouseenter");
+				// Delay For Smoother User Experience //
+				setTimeout(hideBoard3, 500);				
+				setTimeout(startGame, 500);								
 			} else {
 				// Player 2 Random Ship Placement //
 				if (type == "random") randomSetupMultiP2(genericFleet);
